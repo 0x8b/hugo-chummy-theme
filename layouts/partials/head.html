@@ -1,0 +1,3 @@
+{{ partial "google-fonts.html" . }}
+{{ $css := resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "style.scss" . | toCSS | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}">

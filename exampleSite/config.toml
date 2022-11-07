@@ -1,0 +1,16 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+
+[module]
+[[module.imports]]
+  path = 'github.com/0x8b/hugo-chummy-theme'
+
+[params]
+  google_analytics = ''
+  google_tag_manager = ''
+
+  [params.fonts]
+    google_fonts = 'https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:ital,wght@0,100;0,400;0,700;0,800;1,100;1,400;1,700;1,800&display=swap'
+    base = 'Figtree'
+    sourcecode = 'JetBrains Mono'

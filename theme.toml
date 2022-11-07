@@ -1,0 +1,23 @@
+name = "Hugo Chummy"
+license = "MIT"
+licenselink = "https://github.com/0x8b/hugo-chummy-theme/blob/master/LICENSE"
+description = "Chummy is a modern blog theme for Hugo. It contains multiple content types and pages. The theme is blazing fast and fully responsive."
+homepage = "https://github.com/0x8b"
+tags = [
+  "blog",
+  "clean",
+  "clean",
+  "dark",
+  "light",
+  "personal,
+  "responsive"
+]
+features = [
+  "blog",
+  "responsive"
+]
+min_version = "0.41.0"
+
+[author]
+  name = "Mariusz Gumienny"
+  homepage = "https://github.com/0x8b"

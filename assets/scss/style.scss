@@ -1,0 +1,11 @@
+// Fonts
+$font-family-base: {{ .Site.Params.fonts.base }}, Helvetica, Arial, sans-serif;
+$font-family-source-code: {{ .Site.Params.fonts.sourcecode }}, monospace;
+
+@import "external/reset.scss";
+
+body {
+    font-size: 16px;
+    line-height: 1.2;
+    font-family: $font-family-base;
+}
