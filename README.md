@@ -78,10 +78,10 @@ module:
 
 ### 4. Copy the example content
 
-Copy the entire contents of the `your_project/themes/hugo-serif-theme/exampleSite/` folder to root folder of your Hugo site, i.e. `your_project/`. To copy the files using terminal, make sure you are still in the project's root, i.e. the `your_project` folder.
+Copy the entire contents of the `your_project/themes/hugo-chummy-theme/exampleSite/` folder to root folder of your Hugo site, i.e. `your_project/`. To copy the files using terminal, make sure you are still in the project's root, i.e. the `your_project` folder.
 
 ```sh
-cp -a themes/hugo-serif-theme/exampleSite/. .
+cp -a themes/hugo-chummy-theme/exampleSite/. .
 ```
 
 ### 5. Run Hugo
