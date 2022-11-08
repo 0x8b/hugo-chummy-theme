@@ -28,6 +28,8 @@
             <tr><td>Tags</td><td>{{ .Params.Tags }}</td></tr>
             <tr><td>Date</td><td>{{ .Date.Format "2006-01-02 Monday" }}</td></tr>
             <tr><td>Environment</td><td>{{ hugo.Environment }}</td></tr>
+            <tr><td>Alternative Output Formats</td><td>{{ .AlternativeOutputFormats }}</td></tr>
+            <tr><td>Output Formats</td><td>{{ .OutputFormats }}</td></tr>
             <tr><td>Params</td><td>{{ .Params }}</td></tr>
         </tbody>
     </table>

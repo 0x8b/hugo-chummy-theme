@@ -1,0 +1,37 @@
+{{ define "main" }}
+    <article>
+        <header>
+            <h2>{{ .Title }}</h2>
+            <p>By {{ .Params.Author }}</p>
+            <p>Posted {{ .Date.Format "January 2, 2006" }}
+                <span class="tags">in {{ range .Params.Tags -}}<a class="tag" href="/tags/{{ . | urlize }}">{{ . }}</a>{{- end -}}</span>
+            </p>
+            <p>Reading time: {{ math.Ceil (div (countwords .Content) 200.0) }} minutes.</p>
+            <p>Tags: {{ range .Params.Tags }}<a href="/tags/{{ . | urlize }}">{{ . }}</a>{{ end }}</p>
+        </header>
+        <div>
+            {{ .Content }}
+        </div>
+        <div>
+            {{ with .PrevInSection }}
+                <p>Previous post: <a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
+            {{ end }}
+        </div>
+        <div>
+            {{ with .NextInSection }}
+                <p>Next post: <a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
+            {{ end }}
+        </div>
+        <section>
+            {{ $related := .Site.RegularPages.Related . | first 5 }}
+            {{ with $related }}
+                <h3>Related posts</h3>
+                <ul>
+                    {{ range . }}
+                        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+                    {{ end }}
+                </ul>
+            {{ end }}
+        </section>
+    </article>
+{{ end }}
